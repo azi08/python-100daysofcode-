@@ -19,7 +19,7 @@ for i in range(0, nr_symbols):
 for i in range(0, nr_numbers):
   password += numbers[random.randint(0, len(numbers)-1)]
 
-print(password)
+print(f"Your password is: {password}")
 
 ###################Randomised Password##############
 password_list = []
@@ -33,4 +33,4 @@ for i in range(0, nr_numbers):
 
 random.shuffle(password_list)
 randomised_password = ''.join(password_list)
-print(randomised_password)
+print(f"Your randomised password is: {randomised_password}")
