@@ -20,3 +20,17 @@ for i in range(0, nr_numbers):
   password += numbers[random.randint(0, len(numbers)-1)]
 
 print(password)
+
+###################Randomised Password##############
+password_list = []
+
+for i in range(0, nr_letters):
+  password_list += letters[random.randint(0,len(letters)-1)]
+for i in range(0, nr_symbols):
+  password_list += symbols[random.randint(0,len(symbols)-1)]
+for i in range(0, nr_numbers):
+  password_list += numbers[random.randint(0, len(numbers)-1)]
+
+random.shuffle(password_list)
+randomised_password = ''.join(password_list)
+print(randomised_password)
